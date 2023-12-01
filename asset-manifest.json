@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.fc8e93d4.css",
-    "main.js": "/static/js/main.29f30bc7.js",
+    "main.js": "/static/js/main.b90ef400.js",
     "static/js/787.d4aba7ab.chunk.js": "/static/js/787.d4aba7ab.chunk.js",
     "static/media/head.JPG": "/static/media/head.c364a88a7adcc1a42a65.JPG",
     "static/media/sea.JPG": "/static/media/sea.1f732cfcd9fe76f10e91.JPG",
@@ -10,7 +10,7 @@
     "static/media/scoliosis-2.png": "/static/media/scoliosis-2.c1634a191d0ace47f0df.png",
     "static/media/mobile.png": "/static/media/mobile.c2f2226486921693c86b.png",
     "static/media/scoliosis-1.png": "/static/media/scoliosis-1.e470fa685918e818596d.png",
-    "static/media/Chih Hsing Chen_Resume.pdf": "/static/media/Chih Hsing Chen_Resume.008c4afe13e048734223.pdf",
+    "static/media/Chih Hsing Chen_Resume.pdf": "/static/media/Chih Hsing Chen_Resume.4f8f47926f681d056b8a.pdf",
     "static/media/covid.JPG": "/static/media/covid.fa7fa820473c0b322f46.JPG",
     "static/media/IMU.png": "/static/media/IMU.a09230615917b113f39a.png",
     "static/media/FS.png": "/static/media/FS.38f7ebd2fda4816045aa.png",
@@ -18,11 +18,11 @@
     "static/media/covid-2.png": "/static/media/covid-2.3f3c584aba38adc20ebe.png",
     "index.html": "/index.html",
     "main.fc8e93d4.css.map": "/static/css/main.fc8e93d4.css.map",
-    "main.29f30bc7.js.map": "/static/js/main.29f30bc7.js.map",
+    "main.b90ef400.js.map": "/static/js/main.b90ef400.js.map",
     "787.d4aba7ab.chunk.js.map": "/static/js/787.d4aba7ab.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fc8e93d4.css",
-    "static/js/main.29f30bc7.js"
+    "static/js/main.b90ef400.js"
   ]
 }
