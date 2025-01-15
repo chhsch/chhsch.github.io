@@ -69,7 +69,7 @@ export default function HomePage() {
                                 animate={{opacity: 1}}
                                 transition={{duration: 1.4}}
                             >
-                                <span>Hello! I'm {currentWord}</span>
+                                <span>Hello! I'm a {currentWord}</span>
                                 <span className="cursor">|</span>
                             </motion.p>
 
