@@ -1,0 +1,237 @@
+.experience {
+    margin: 0;
+    padding: 5rem;
+    text-align: left;
+    background-color: #f8f9fa;
+}
+
+.experience h2 {
+    font-weight: lighter;
+}
+
+.experience-container {
+    margin: 0;
+    padding: 3rem;
+    padding-left: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.experience-container > * {
+    margin: 1em;
+  }
+
+@media (max-width: 800px) {
+    .experience {
+        padding: 1rem;
+    }
+
+    .experience-container {
+        padding: 1rem 0rem;
+    }
+  }
+
+/* Container */
+.experience-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    position: relative;
+}
+
+.timeline-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+/* Vertical Line */
+.timeline-line {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background-color: #dcdcdc;
+}
+
+/* Timeline Item */
+.timeline-item {
+    width: 50%;
+    padding: 20px;
+    position: relative;
+}
+
+.timeline-item.left {
+    left: 0;
+    text-align: left; /* ✅ Changed to left alignment */
+}
+
+.timeline-item.right {
+    left: 50%;
+    text-align: left; /* Keeps right items aligned left for consistency */
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    width: 15px;
+    height: 15px;
+    background-color: #457B9D;
+    border-radius: 50%;
+    border: 3px solid white;
+    z-index: 1;
+}
+
+.timeline-item.left::before {
+    right: -8px;
+}
+
+.timeline-item.right::before {
+    left: -8px;
+}
+
+/* Content Box */
+.content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+    width: 100%;
+    /*text-align: center;*/
+}
+
+.content:hover {
+    transform: scale(1.05);
+}
+
+/* Text Styles */
+.content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: left; /* ✅ Ensures titles are left-aligned */
+}
+
+.content p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+    text-align: justify; /* ✅ Ensures body text is left-aligned */
+    text-justify: inter-word;
+}
+
+.timeline-period {
+    font-style: italic;
+    color: #888;
+}
+
+.content ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.content li {
+    margin-bottom: 8px;
+    color: #444;
+    text-align: left; /* ✅ Left-aligns list items */
+}
+/*!* Default link style *!*/
+/*.timeline a {*/
+/*    color: #0077B5; !* LinkedIn Blue or any color you prefer *!*/
+/*    text-decoration: none;*/
+/*    font-weight: bold;*/
+/*    transition: color 0.3s ease, text-decoration 0.3s ease;*/
+/*}*/
+
+/* Hover effect */
+.timeline a:hover {
+    color: #005582;  /* Darker shade on hover */
+    text-decoration: underline;
+}
+
+/* Visited link style */
+.timeline a:visited {
+    color: #457B9D;
+}
+
+/* 🔧 Adjust Experience Section for Mobile */
+@media (max-width: 800px) {
+    /* Reduce padding for the main section */
+    .experience {
+        padding: 1rem;
+    }
+
+    .experience-container {
+        padding: 1rem 0;
+        align-items: center;
+    }
+
+    /* Adjust the timeline title */
+    .timeline-title {
+        font-size: 2rem;
+    }
+
+    /* Stack timeline items vertically */
+    .timeline {
+        padding: 0;
+    }
+
+    .timeline-line {
+        left: 8px; /* Move the vertical line to the left */
+    }
+
+    /* Make all timeline items full-width */
+    .timeline-item {
+        width: 100%;
+        padding-left: 30px;
+        margin-bottom: 2rem;
+    }
+
+    .timeline-item.left,
+    .timeline-item.right {
+        left: 0;
+        text-align: left;
+    }
+
+    /* Adjust timeline dots */
+    .timeline-item::before {
+        left: 0;
+    }
+
+    /* Adjust content box */
+    .content {
+        width: 100%;
+        padding: 15px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .content h2 {
+        font-size: 1.25rem;
+    }
+
+    .content p,
+    .content li {
+        font-size: 0.9rem;
+    }
+
+    /* Adjust link styles for mobile */
+    .timeline a {
+        font-size: 0.9rem;
+        word-break: break-word;
+    }
+}

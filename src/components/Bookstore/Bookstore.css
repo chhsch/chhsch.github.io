@@ -1,0 +1,32 @@
+.bookstore {
+    margin: 0;
+    padding: 5rem;
+    text-align: left;
+}
+
+.bookstore-container {
+    margin: 0;
+    padding: 3rem 0rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.bookstore-container > * {
+    margin: 1em;
+    width: 50%;
+  }
+
+@media (max-width: 800px) {
+    .bookstore {
+        padding: 1rem;
+    }
+    .bookstore-container {
+        padding: 1rem 0rem;
+        flex-direction: column;
+    }
+    .bookstore-container > * {
+        margin: 1em 0em;
+        width: 100%;
+      }
+  }

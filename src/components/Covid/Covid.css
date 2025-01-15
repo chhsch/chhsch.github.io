@@ -1,0 +1,32 @@
+.covid {
+    margin: 0;
+    padding: 5rem;
+    text-align: left;
+}
+
+.covid-container {
+    margin: 0;
+    padding: 3rem 0rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.covid-container > * {
+    margin: 1em;
+    width: 50%;
+  }
+
+@media (max-width: 800px) {
+    .covid {
+        padding: 1rem;
+    }
+    .covid-container {
+        padding: 1rem 0rem;
+        flex-direction: column;
+    }
+    .covid-container > * {
+        margin: 1em 0em;
+        width: 100%;
+      }
+  }

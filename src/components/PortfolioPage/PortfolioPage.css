@@ -1,0 +1,77 @@
+.portfolio {
+    margin: 0;
+    padding: 5rem;
+    text-align: left;
+}
+
+.portfolio-container {
+    margin: 0;
+    padding: 3rem 0rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.portfolio-container > * {
+    margin: 1em;
+    width: 30%;
+  }
+
+/*@media (max-width: 800px) {*/
+/*    .portfolio {*/
+/*        padding: 1rem;*/
+/*    }*/
+/*    .portfolio-container {*/
+/*        padding: 1rem 0rem;*/
+/*        flex-direction: column;*/
+/*    }*/
+/*    .portfolio-container > * {*/
+/*        margin: 1em 0em;*/
+/*        width: 100%;*/
+/*      }*/
+/*  }*/
+/* Reduce the gap between cards */
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 15px; /* Smaller gap between cards */
+    padding: 5px;
+}
+
+
+/* Add this to your CSS file */
+.card-custom {
+    width: 500px;
+    height: 700px;
+    position: relative;
+}
+
+.card-custom img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.card-custom-text {
+    height: 180px;
+    overflow: hidden;
+
+}
+/* Default Card Styles */
+.responsive-card {
+    position: relative;
+    width: 300px;
+    height: 500px;
+    margin: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* 📱 Mobile Devices (0px - 600px) */
+@media screen and (max-width: 600px) {
+    .responsive-card {
+        /*width: 100px; !* Take up most of the screen *!*/
+        /*height: auto; !* Adjust height based on content *!*/
+        margin: auto -10px; /* Center the card */
+    }
+}

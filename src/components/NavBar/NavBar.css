@@ -1,0 +1,309 @@
+#nav-bar-collapse {
+    text-align: center;
+}
+
+/*!* Container for the whole navbar *!*/
+/*.navbar {*/
+/*    background-color: white;*/
+/*    box-shadow: none;*/
+/*    padding: 10px 40px;*/
+/*}*/
+
+/* Logo Styling */
+.logo-navbar {
+    width: 30px;
+    margin-right: 10px;
+}
+.padding-global-2 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    /*background-color: var(--homepage-color);*/
+}
+
+/* Brand text beside the logo */
+.brand-text {
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+/* Navigation links styling */
+.nav-menu .nav-link {
+    font-size: 16px;
+    color: #6b7280;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-menu .nav-link:hover {
+    color: #111827;
+}
+
+/* Right content aligned */
+.right-navbar-content {
+    display: flex;
+    align-items: center;
+}
+
+/* Navbar spacing */
+.navbar-component {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+.navbar-component {
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    background-color: #ffffff38;
+    border-radius: 1.375rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.25rem;
+    padding: 1rem 2.2rem 1rem 2.25rem;
+    display: flex;
+}
+.padding-global-2 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+.nav-menu .nav-link {
+    margin-left: 20px;
+    font-weight: 500;
+    color: #6b7280;
+}
+.right-navbar-content {
+    grid-column-gap: .8rem;
+    grid-row-gap: .8rem;
+    align-items: center;
+    display: flex;
+}
+.brand-text {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container {
+    width: 100%;
+    max-width: 110rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.copyright-main-wrapper {
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1.5rem;
+    flex-flow: column;
+    display: flex;
+}
+.header {
+    z-index: 9999;
+    width: 100%;
+    position: fixed;
+}
+.navbar {
+    z-index: 50;
+    background-color: #fff0;
+    position: fixed;
+    inset: 0% 0% auto;
+}
+.w-nav:before,
+.w-nav:after {
+    content: " ";
+    display: table;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-column-end: 2;
+    grid-row-end: 2;
+}
+
+.navbar-expand {
+    flex-wrap: nowrap !important;
+    justify-content: space-between !important;
+}
+/* 📱 Mobile Devices (0px - 768px) */
+@media screen and (max-width: 768px) {
+    /* Navbar becomes sticky and spans the width */
+    .navbar {
+        background-color: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 10px 20px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
+
+    /* Adjust logo size for mobile */
+    .logo-navbar {
+        width: 25px;
+        margin-right: 5px;
+    }
+
+    /* Reduce brand text size */
+    .brand-text {
+        font-size: 16px;
+    }
+
+    /* Stack navbar content vertically */
+    .navbar-component {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    /* Hide nav links by default */
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+        background-color: white;
+        padding: 10px 0;
+        border-top: 1px solid #eee;
+    }
+
+    /* Show nav links when menu is open */
+    .nav-menu.active {
+        display: flex;
+    }
+
+    /* Adjust nav links for mobile */
+    .nav-menu .nav-link {
+        font-size: 16px;
+        margin: 10px 0;
+        padding: 10px 20px;
+    }
+
+    /* Hamburger Icon */
+    .hamburger {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        position: relative;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .hamburger::before,
+    .hamburger::after {
+        content: '';
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        position: absolute;
+        transition: all 0.3s ease;
+    }
+
+    .hamburger::before {
+        top: -8px;
+    }
+
+    .hamburger::after {
+        top: 8px;
+    }
+
+    /* Toggle animation for hamburger */
+    .hamburger.active {
+        background-color: transparent;
+    }
+
+    .hamburger.active::before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    .hamburger.active::after {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+
+    /* Adjust padding */
+    .padding-global-2 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+/*.w-container {*/
+/*    margin-left: auto;*/
+/*    margin-right: auto;*/
+/*    max-width: 940px;*/
+/*}*/
+/*.w-container:before,*/
+/*.w-container:after {*/
+/*    content: " ";*/
+/*    display: table;*/
+/*    grid-column-start: 1;*/
+/*    grid-row-start: 1;*/
+/*    grid-column-end: 2;*/
+/*    grid-row-end: 2;*/
+/*}*/
+/*.w-container:after {*/
+/*    clear: both;*/
+/*}*/
+/*.w-container .w-row {*/
+/*    margin-left: -10px;*/
+/*    margin-right: -10px;*/
+/*}*/
+
+/*.right-navbar-content {*/
+/*    grid-column-gap: .8rem;*/
+/*    grid-row-gap: .8rem;*/
+/*    align-items: center;*/
+/*    display: flex;*/
+/*}*/
+/*.right-navbar-content {*/
+/*    display: flex;*/
+/*}*/
+
+/*.nav-menu-wrap {*/
+/*    grid-column-gap: 1rem;*/
+/*    grid-row-gap: 1rem;*/
+/*    align-items: center;*/
+/*    display: flex;*/
+/*}*/
+
+/*.nav-menu-wrap {*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.navbar-component {*/
+/*    -webkit-backdrop-filter: blur(20px);*/
+/*    backdrop-filter: blur(20px);*/
+/*    background-color: #ffffff38;*/
+/*    border-radius: 1.375rem;*/
+/*    flex-direction: row;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    margin-top: 1.25rem;*/
+/*    padding: 1rem 2.2rem 1rem 2.25rem;*/
+/*    display: flex;*/
+/*}*/
+
+/*.navbar-component {*/
+/*    padding-top: .5rem;*/
+/*    padding-bottom: .5rem;*/
+/*    padding-right: 1rem;*/
+/*    position: relative;*/
+/*}*/
+
+/*.navbar-component {*/
+/*    padding-top: 0;*/
+/*    padding-bottom: 0;*/
+/*    padding-left: 1rem;*/
+/*}*/
+
+/*.padding-global-2 {*/
+/*    padding-left: 2.5rem;*/
+/*    padding-right: 2.5rem;*/
+/*}*/
