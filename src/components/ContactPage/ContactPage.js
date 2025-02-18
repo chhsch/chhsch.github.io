@@ -125,7 +125,7 @@ export default function ContactPage() {
                     </div>
 
                     <footer style={{textAlign: "center", marginTop: "50px"}}>
-                        <small>&copy; 2023 Hathaway Chen. All rights reserved.</small>
+                        <small>&copy; 2023 - 2025 Hathaway Chen. All rights reserved.</small>
                     </footer>
                 </div>
             </div>

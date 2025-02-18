@@ -1,6 +1,6 @@
 import Button from 'react-bootstrap/Button';
 import "./HomePage.css"
-import Resume from "../../assets/Chih_Hsing_Chen_Resume_Spring_v1.pdf"
+import Resume from "../../assets/Chih_Hsing_Chen_Resume_Spring_v5.pdf"
 import AboutPage from "../AboutPage/AboutPage";
 import ExperiencePage from '../ExperiencePage/ExperiencePage';
 import PortfolioPage from '../PortfolioPage/PortfolioPage';
