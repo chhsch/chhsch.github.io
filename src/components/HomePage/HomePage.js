@@ -5,7 +5,6 @@ import AboutPage from "../AboutPage/AboutPage";
 import ExperiencePage from '../ExperiencePage/ExperiencePage';
 import PortfolioPage from '../PortfolioPage/PortfolioPage';
 import ContactPage from '../ContactPage/ContactPage';
-import seaImage from '../../assets/sea.JPG';
 import flower from '../../assets/flower.png';
 
 import { useState, useEffect } from "react";
