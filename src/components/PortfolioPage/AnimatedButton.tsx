@@ -1,4 +1,5 @@
 "use client";
+import React from "react";
 
 import { motion } from "framer-motion";
 
@@ -7,7 +8,7 @@ interface AnimatedButtonProps {
     onClick: () => void;
 }
 
-// 🎨 Background animation
+// Background animation
 const backgroundVariant = {
     initial: { backgroundColor: "#A3B18A" },  // Default button color
     hover: {
