@@ -13,8 +13,9 @@ import image6 from '../../assets/gqme.png'
 import image7 from '../../assets/ToDolist.png'
 import image8 from '../../assets/fancygallery.png'
 import {motion} from "framer-motion";
-// import AnimatedButton from "../../components/PortfolioPage/AnimatedButton";
-import AnimatedButton from "./AnimatedButton.tsx";
+import React from "react";
+import AnimatedButton from "./AnimatedButton";
+
 
 
 
@@ -61,7 +62,7 @@ export default function PortfolioPage() {
     };
 
 
-    // ✅ Added navigation paths for each project
+    //Added navigation paths for each project
     const projects = [
         {
             title: "Bucket List",
@@ -153,7 +154,7 @@ export default function PortfolioPage() {
                                         <Card.Title>{project.title}</Card.Title>
                                         <Card.Text>{project.text}</Card.Text>
 
-                                        {/* ✅ Dynamic Button Navigation */}
+                                        {/* Dynamic Button Navigation */}
                                         <motion.div variants={buttonVariants}
                                                     // initial="initial"
                                                     // whileHover="hover"
@@ -163,22 +164,6 @@ export default function PortfolioPage() {
                                             >
                                                 Learn more
                                             </AnimatedButton>
-
-                                            {/*<Button*/}
-                                            {/*    onClick={() => handleNavigation(project.path, project.isExternal)}*/}
-                                            {/*    style={{*/}
-                                            {/*        backgroundColor: '#A3B18A',*/}
-                                            {/*        borderColor: '#A3B18A',*/}
-                                            {/*        position: 'absolute',*/}
-                                            {/*        bottom: '10px',*/}
-                                            {/*        left: '10px',*/}
-                                            {/*        // padding: '10px 20px',*/}
-                                            {/*        transition: 'transform 0.3s ease-in-out',*/}
-                                            {/*        transformOrigin: 'center'*/}
-                                            {/*    }}*/}
-                                            {/*>*/}
-                                            {/*    Learn more*/}
-                                            {/*</Button>*/}
                                         </motion.div>
                                     </Card.Body>
                                 </motion.div>

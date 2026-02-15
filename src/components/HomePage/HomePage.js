@@ -1,6 +1,6 @@
 import Button from 'react-bootstrap/Button';
 import "./HomePage.css"
-import Resume from "../../assets/Chih_Hsing_Chen_Resume_Spring_v5.pdf"
+import Resume from "../../assets/Chih_Hsing_Chen_Resume_2026__Copy_.pdf"
 import AboutPage from "../AboutPage/AboutPage";
 import ExperiencePage from '../ExperiencePage/ExperiencePage';
 import PortfolioPage from '../PortfolioPage/PortfolioPage';
@@ -42,17 +42,7 @@ export default function HomePage() {
                 <div className="container-medium w-container">
                     <div className="hero-grid">
                         <div className="hero-content">
-                            {/* Animated Overline Text */}
-                            {/*<motion.div*/}
-                            {/*    className="overline-text"*/}
-                            {/*    initial={{ opacity: 0, y: -20 }}*/}
-                            {/*    animate={{ opacity: 1, y: 0 }}*/}
-                            {/*    transition={{ duration: 1 }}*/}
-                            {/*>*/}
-                            {/*    Savory Wheels*/}
-                            {/*</motion.div>*/}
-
-                            {/* Animated Heading */}
+                            
                             <motion.h1
                                 className="heading-style-h1 text-align-left"
                                 initial={{opacity: 0, x: 0, y: 30}}
@@ -75,10 +65,10 @@ export default function HomePage() {
 
                             {/* Animated Button */}
                             <motion.a
-                                href={Resume}  // ✅ Link to the resume
+                                href={Resume}  //  Link to the resume
                                 className="button w-button"
-                                target="_blank"  // ✅ Open in a new tab
-                                rel="noopener noreferrer"  // ✅ Security best practice
+                                target="_blank"  // Open in a new tab
+                                rel="noopener noreferrer"  // Security best practice
                                 whileHover={{scale: 1.1}}
                                 whileTap={{scale: 0.9}}
                                 initial={{opacity: 0, x: 0, y: 30}}
@@ -111,36 +101,3 @@ export default function HomePage() {
         </section>
     );
 }
-
-
-
-
-
-
-
-// export default function HomePage() {
-//     const myStyle = {
-//       backgroundImage: `url(${seaImage}`,
-//       backgroundSize: "cover",
-//       backgroundPosition: "center",
-//       backgroundRepeat: "no-repeat",
-//       height: "100vh",
-//       width: "auto",
-//       }
-//
-//     return (
-//       <>
-//         <div className="home" style={myStyle}>
-//
-//             <h1>Hathaway Chen</h1>
-//             <h2>Aspiring Software Engineer</h2>
-//             <Button className="resume-button" variant="outline-light" href={Resume} target="_blank">View Resume</Button>{' '}
-//
-//         </div>
-//         <AboutPage/>
-//         <ExperiencePage/>
-//         <PortfolioPage/>
-//         <ContactPage/>
-//       </>
-//     );
-//   }

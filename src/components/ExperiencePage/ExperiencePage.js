@@ -17,6 +17,16 @@ export default function ExperiencePage() {
 
     const experiences = [
         {
+            title: "Specialist Software Engineering LP",
+            company: "Acuity",
+            location: "Atlanta, GA",
+            period: "Jul. 2025 - Present",
+            details: [
+                "1st Rotation: NPD team – SensorView",
+"2nd Rotation: Atrius Energy and Sustainability",
+            ],
+        },
+        {
             title: "Big Data Platform Engineer Intern",
             company: "Eviden",
             location: "Reston, VA",
@@ -36,15 +46,7 @@ export default function ExperiencePage() {
             ],
         },
 
-        {
-            title: "Software Engineer Intern",
-            company: "Clocky",
-            location: "New York, NY",
-            period: "May. 2024 - Jul. 2024",
-            details: [
-                "Developed and maintained consumer-facing e-commerce web pages for Clocky and other home goods products, enhancing their online presence through HTML, CSS, JavaScript, and Shopify. I collaborated with UX/UI designers and team members to create both static and dynamic web pages, ensuring a seamless and engaging user experience.",
-            ],
-        },
+
         {
             title: "Research Assistant",
             company: "Academia Sinica",
@@ -60,9 +62,9 @@ export default function ExperiencePage() {
             title: "Dietitian Intern",
             company: "Taipei Municipal Wanfang Hospital",
             location: "Taipei, Taiwan",
-            period: "Jan 2020 - May 2020",
+            period: "Jan 2021 - May 2021",
             details: [
-                "Designed diet-control plans for patients and monitored their progress over 4 months, delivered 18 talks on diabetes and hypertension prevention, and supported medical public relations in market surveys of nutritional supplements.",
+                "Designed diet-control plans for patients and monitored their progress over 4 months, and supported medical public relations in market surveys of nutritional supplements.",
             ],
         },
         {
@@ -121,57 +123,3 @@ export default function ExperiencePage() {
         </div>
     );
 }
-// export default function ExperiencePage() {
-//     return (
-//         <>
-//         <div id="experience" className="experience">
-//             <h1>Experience</h1>
-//             <div className="experience-container">
-//               <div>
-//               <h2>Laboratory Software Development Assistant </h2>
-//               <p>Academia Sinica  - Taipei, Taiwan</p>
-//               <p>Jun. 2021 - Aug. 2023 </p>
-//                   <ul>
-//                       <li>Transformed subjective SPADI value, a self-report measure to assess the patients’ shoulder disability, into objective and visualized the results </li>
-//                       <li>Modified recognition machine learning models to predict the severity of adhesive capsulitis patients</li>
-//                       <li>Improved classification accuracy from 43% to 75%</li>
-//                   </ul>
-//               </div>
-//                 <div>
-//                     <h2>Dietitian Intern</h2>
-//                     <p>Taipei Municipal Wanfang Hospital- Taipei, Taiwan</p>
-//                     <p>Jan 2020 - May 2020</p>
-//                     <ul>
-//                         <li>Designed diet-control plans for patients and followed their progress for 4 months </li>
-//                         <li>Delivered 18 talks on diabetes and hypertension prevention</li>
-//                         <li>Assisted the medical public relations in conducting market surveys of nutritional supplements</li>
-//                     </ul>
-//                 </div>
-//
-//               <div>
-//                 <h2>Dietitian Intern</h2>
-//                 <p>Cofit Healthcare Inc. - Taipei, Taiwan</p>
-//                 <p>July 2019 - June 2021</p>
-//                 <ul>
-//                   <li>Analyzed Children's Diet Project </li>
-//                   <li>Composed articles about health nutrition </li>
-//                   <li>Edited company’s promotion videos </li>
-//                   <li>Designed personal diets for clients</li>
-//                 </ul>
-//               </div>
-//
-//               <div>
-//                 <h2>Medical PR Consultant Intern</h2>
-//                 <p>Vision Medical PR Consultants Ltd- Taipei, Taiwan</p>
-//                 <p>July 2020 - Sept 2020</p>
-//                 <ul>
-//                   <li>Use premiere and final cut pro to edit medical society health education video</li>
-//                   <li>Assist in the pre-operation of the press conference</li>
-//                 </ul>
-//               </div>
-//
-//             </div>
-//         </div>
-//         </>
-//     );
-// }
